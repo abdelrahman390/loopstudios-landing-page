@@ -1,0 +1,561 @@
+@font-face {
+    font-family: Josefin Sans;
+    src: url(fonts/static/JosefinSans-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans';
+}
+
+.max-width{
+    max-width: 85%;
+    margin: auto;
+}
+
+.max-width-cards{
+    max-width: 70%;
+    margin: auto;
+}
+
+.mobile{
+    display: none;
+    position: absolute;
+}
+
+
+
+
+
+
+
+/* header class start */
+
+.fir-sec {
+    background-size: cover;
+    height: 100vh;
+}
+
+.fir-sec .background-img{
+    position: absolute;
+}
+
+.fir-sec .background-img .back-img{
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.fir-sec .over-lay{
+    background: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+}
+
+.fir-sec header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    position: relative;
+}
+
+.fir-sec header .js-open{
+    display: none;
+}
+
+.fir-sec header .js-close{
+    display: none;
+}
+
+.fir-sec header .js-box{
+    display: none;
+}
+
+.fir-sec header ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.fir-sec header ul .li-box{
+    display: flex;
+}
+
+.fir-sec header li{
+    padding-right: 30px;
+}
+
+.fir-sec header li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    transition: 0.4s;
+}
+
+.fir-sec header li a:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    right: 0;
+    bottom: -12px;
+    transition: 0.4s;
+    margin: auto;
+}
+
+.fir-sec header li a:hover:after{
+    width: 25px;
+    transition: 0.4s;
+}
+
+.fir-sec .header-box{
+    color: white;
+    position: relative;
+    display: flex;
+    margin-top: 150px;
+    font-family: system-ui;
+    font-weight: 100;
+    font-size: 78px;
+    width: 615px;
+    text-transform: uppercase;
+    padding: 16px;
+    border: 1px solid;
+    letter-spacing: 5px;
+}
+/* header class End */
+
+/* second sec start */
+.sec-sec{
+    height: 125vh;
+}
+
+.sec-sec .container{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-top: 100px;
+}
+
+.sec-sec .container .img-box{
+    position: relative;
+}
+
+.sec-sec .container .text-container{
+    position: relative;
+    right: 123px;
+    width: 455px;
+    background-color: white;
+    padding: 10px 50px;
+}
+
+.sec-sec .container .text-container h1{
+    font-size: 58px;
+    font-weight: 100;
+    font-family: system-ui;
+    text-transform: uppercase;
+    width: 441px;
+    line-height: 60px;
+    padding-bottom: 30px;
+}
+
+.sec-sec .container .text-container p{
+    line-height: 21px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+/* second sec end */
+
+
+/* last section */
+.last-sec .sec-head{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 60px;
+    align-items: flex-end;
+}
+
+.last-sec .sec-head h1{
+    font-size: 58px;
+    font-family: system-ui;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.last-sec .sec-head button{
+    width: 150px;
+    height: 40px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.last-sec .sec-head button:hover{
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+    box-shadow: none;
+}
+
+.last-sec .boxes-container{
+    height: 1000px;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.last-sec .boxes-container .card{
+    margin-bottom: 30px;
+    position: relative;
+    background: linear-gradient(to top, #000000ad, transparent , transparent , transparent);
+    height: 45%;
+    transition: 0.3s;
+}
+
+.last-sec .boxes-container .card::before {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0));
+    width: 90%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.last-sec .boxes-container .card:hover::before {
+    width: 100%;
+    position: absolute;
+    content: "";
+    color: black;
+    background: white;
+    opacity: .7;
+    transition: 0.3s;
+}
+
+.last-sec .boxes-container .card:hover h1 {
+    color: black;
+}
+
+.last-sec .boxes-container img{
+    position: relative;
+    z-index: -1;
+}
+
+.last-sec .boxes-container h1{
+    color: white;
+    position: relative;
+    bottom: 132px;
+    font-size: 40px;
+    font-weight: 100;
+    font-family: system-ui;
+    margin-left: 30px;
+    text-transform: uppercase;
+    line-height: 42px;
+}
+/* last section  End*/
+
+
+/* footer start */
+footer{
+    background-color: black;
+    height: 200px;
+}
+
+footer .container{
+    height: 149px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+footer .container .box1 ul{
+    display: flex;
+    margin-top: 35px;
+    list-style: none;
+}
+
+footer .container .box1 a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 10px;
+    position: relative;
+}
+
+footer .container .box1 ul a:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    right: 0;
+    bottom: -12px;
+    transition: 0.4s;
+    margin: auto;
+}
+
+footer .container .box1 ul a:hover:after{
+    width: 25px;
+    transition: 0.4s;
+}
+
+footer .container .box2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+footer .container .box2 h3{
+    color: white;
+    opacity: 0.5;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+footer .container .box2 a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 0 10px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+footer .container .box2 a:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    transition: 0.4s;
+    margin: auto;
+}
+
+footer .container .box2 a:hover:after{
+    width: 20px;
+    transition: 0.4s;
+}
+
+/* footer End */
+
+/* responseve design Start */
+@media (max-width: 400px){
+
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    
+    /* fir sec start */
+    .fir-sec{
+        height: 124vh;
+    }
+
+    .fir-sec .over-lay{
+        display: none;
+    }
+
+    .fir-sec header{
+        padding-top: 50px;
+    }
+
+    .fir-sec header .logo{
+        width: 150px;
+        z-index: 10000;
+        position: relative;
+    }
+
+    .fir-sec header .js-open{
+        display: block;
+        height: 20px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .fir-sec .open{
+        left: -9%;
+    }
+
+    .fir-sec header .close{
+        display: none;
+    }
+
+    .fir-sec header .js-close{
+        display: block;
+        height: 20px;
+        width: 25px;
+        position: absolute;
+        right: 30px;
+        top: 52px;    
+    }
+
+    .fir-sec header ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        height: 100vh;
+        position: absolute;
+        z-index: 100;
+        left: -127%;
+        top: 0;
+        width: 100vw;
+        text-align: center;
+        padding-top: 100px;
+        transition: 0.4s;
+    }
+
+    .fir-sec header ul .li-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 410px;
+    }
+
+    .fir-sec header li{
+        padding: 10px 0;
+    }
+
+    .fir-sec .header-box{
+        font-size: 35px;
+        width: auto;
+    }
+    /* fir sec End */
+
+   /* sec section start */
+    .sec-sec .container{
+        flex-direction: column;
+    }
+
+    .sec-sec .container .text-container{
+        right: 0;
+        width: auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    .sec-sec .container .text-container h1{
+        width: auto;
+        font-size: 40px;
+    }
+   /* sec section start */
+
+
+    /* last sec start */
+    .last-sec{
+        height: 1730px;
+    }
+
+    .last-sec .sec-head {
+        justify-content: center;
+    }
+
+    .last-sec .sec-head h1{
+        font-size: 37px;
+    }
+
+    .last-sec .sec-head button{
+        display: none;
+    }
+
+    .last-sec .boxes-container .mobile{
+        height: 150px;
+        width: 100%;
+    }
+
+    .last-sec .boxes-container .card{
+        background: linear-gradient( #0000006e,  #0000006e);
+        height: 15%;
+        margin-bottom: 50px;
+    }
+
+    .last-sec .card:hover::before{
+        display: none;
+    }
+
+    .last-sec .boxes-container .card:hover h1 {
+        color: white;
+    }
+
+    .last-sec .boxes-container h1{
+        bottom: 105px;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    /* last sec end */
+
+
+    /* footer start */
+    footer{
+        height: auto;
+    }
+
+    footer .container{
+        padding-top: 37px;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    footer .container .box1{
+        text-align: center;
+    }
+
+    footer .container .box1 img{
+        width: 150px;
+    }
+
+    footer .container .box2{
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    footer .container .box2 h3{
+        font-size: 14px;
+    }
+    /* footer end */
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responseve design End */
+
+
+
